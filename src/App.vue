@@ -6,14 +6,16 @@ import { RouterLink, RouterView } from "vue-router";
   <header class="p-[50px]">
     <nav class="flex justify-between items-center">
       <div class="flex gap-x-5 text-lg items-center">
-        <img
-          src="./assets/images/logo06@2x-free-img.png"
-          alt="logo"
-          width="182"
-          height="36"
-          class="cursor-pointer"
-        />
-        <RouterLink to="/">All Product</RouterLink>
+        <RouterLink to="/">
+          <img
+            src="./assets/images/logo06@2x-free-img.png"
+            alt="logo"
+            width="182"
+            height="36"
+            class="cursor-pointer"
+          />
+        </RouterLink>
+        <RouterLink to="/products">All Product</RouterLink>
         <RouterLink to="/about">Sofa</RouterLink>
         <RouterLink to="/about">Chair</RouterLink>
         <RouterLink to="/about">Table</RouterLink>
@@ -25,5 +27,5 @@ import { RouterLink, RouterView } from "vue-router";
     </nav>
   </header>
 
-  <RouterView />
+  <RouterView class="p-[80px]" />
 </template>
